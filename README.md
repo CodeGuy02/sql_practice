@@ -118,7 +118,7 @@ SELECT name AS Name, CONCAT(ROUND(population/(SELECT population FROM world WHERE
 SELECT name FROM world WHERE gdp > ALL(SELECT gdp FROM world WHERE continent = 'europe' AND gdp > 0)
 ```
 
-7.
+7. correlated or synchronized sub-query:
 ```sql
 SELECT continent, name, area FROM world x
   WHERE area >= ALL
