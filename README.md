@@ -74,7 +74,7 @@ SELECT * FROM nobel WHERE winner = 'Eugene O''neill'
 
 13.
 ```sql
-
+SELECT winner, yr, subject FROM nobel WHERE winner LIKE 'Sir%' ORDER BY yr DESC, winner ASC
 ```
 
 14.
