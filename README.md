@@ -169,9 +169,9 @@ SELECT SUM(population) FROM world WHERE name IN ('Estonia', 'Latvia', 'Lithuania
 ```sql
 SELECT continent, COUNT(name) FROM world GROUP BY continent
 ```
-7.
+7. For each continent show the continent and number of countries with populations of at least 10 million.
 ```sql
-
+SELECT continent, COUNT(population) FROM world  WHERE population >= 10000000 GROUP BY continent
 ```
 8.
 ```sql
