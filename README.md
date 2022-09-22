@@ -230,3 +230,21 @@ SELECT player FROM game JOIN goal ON (matchid = id)WHERE stadium = 'National Sta
 ```sql
 
 ```
+
+11.
+```sql
+
+```
+
+12.
+FIXED:
+Error:
+Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'gisq.game.mdate' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+```sql
+SELECT matchid, game.mdate, COUNT(goal.teamid) FROM goal JOIN game ON (goal.matchid = game.id) WHERE goal.teamid = 'GER' GROUP BY matchid, mdate
+```
+
+13.
+```sql
+
+```
