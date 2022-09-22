@@ -177,3 +177,23 @@ SELECT continent, COUNT(population) FROM world  WHERE population >= 10000000 GRO
 ```sql
 
 ```
+## The JOIN operation 
+
+1.
+```sql
+SELECT matchid, player FROM goal 
+  WHERE teamid = 'GER'
+```
+2.
+```sql
+SELECT id,stadium,team1,team2
+  FROM game WHERE id = 1012
+```
+3.
+```sql
+
+```
+4.
+```sql
+
+```
